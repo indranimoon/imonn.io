@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Image</title>
+  <title>My Page</title>
   <style>
     body {
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      display: flex; /* Use flexbox for easy layout */
     }
 
-    img {
-      max-width: 100%;
-      max-height: 100%;
+    .image-container {
+      flex: 1; /* Takes up available space */
+      text-align: center; /* Center the image */
+    }
+
+    .text-container {
+      flex: 2; /* Takes up twice the space of the image */
+      padding: 20px; /* Add padding for spacing */
     }
   </style>
 </head>
 <body>
-  <img src="moondp.jpeg" alt="My Image">
+  <div class="image-container">
+    <img src="moondp.jpeg" alt="Your Image">
+  </div>
+  <div class="text-container">
+    <h2>My Studies</h2>
+    <p>This is where you can add your study notes, summaries, or any other relevant information.</p>
+  </div>
 </body>
 </html>
