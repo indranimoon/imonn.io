@@ -5,6 +5,7 @@
   <style>
     body {
       display: flex; /* Use flexbox for easy layout */
+      height: 100vh; /* Set height to 100% of viewport */
     }
 
     .image-container {
@@ -16,6 +17,11 @@
       flex: 2; /* Takes up twice the space of the image */
       padding: 20px; /* Add padding for spacing */
     }
+
+    img {
+      max-width: 100%; /* Ensure image doesn't exceed container width */
+      height: auto; /* Maintain aspect ratio */
+    }
   </style>
 </head>
 <body>
@@ -23,8 +29,9 @@
     <img src="moondp.jpeg" alt="Your Image">
   </div>
   <div class="text-container">
-    <h2>My Studies</h2>
-    <p>This is where you can add your study notes, summaries, or any other relevant information.</p>
+    <h2>Education</h2>
+    <pre>Bachelors in Public Administration, Jahangirnagar University</pre>
+    <h2>Click here to know about my <a href="https://sourindeyuw.github.io/">husband </a></h2>
   </div>
 </body>
 </html>
